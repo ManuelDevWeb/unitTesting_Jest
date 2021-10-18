@@ -9,3 +9,5 @@
 5. Crear el archivo: src/__test__/global.test.js
 
 6. Agregar el comando test en el package.json (npm run test) para ejecutar pruebas
+
+7. Implementar watch y coverage en el index.js

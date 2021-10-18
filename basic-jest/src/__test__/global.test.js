@@ -13,6 +13,7 @@ test('Debe contener un texto', () => {
     expect(text).toMatch(/Ironman/)
 });
 
+
 // Pruebas para arrays
 const fruits = ['manzana', 'banana', 'pera', 'lulo'];
 
@@ -21,17 +22,20 @@ test('Tenemos una banana?', () => {
     expect(fruits).toContain('banana');
 });
 
+
 // Pruebas para numbers
 test('Mayor que', () => {
     // Validando que el número 10 es mayor que 9
     expect(10).toBeGreaterThan(9);
 });
 
+
 // Pruebas para booleans
 test('Verdadero', () => {
     // Validando si el valor del expect es true
     expect(true).toBeTruthy();
 });
+
 
 // Pruebas para callbacks
 const reverseString = (text, callback) => {
@@ -40,10 +44,13 @@ const reverseString = (text, callback) => {
 };
 
 test('Probar un Callback', () => {
+    // Enviando texto y función de callback a la función reverseString
     reverseString('Hola', textCallback => {
+        // Validando que invertimos sea aloH
         expect(textCallback).toBe('aloH');
     })
 });
+
 
 // Pruebas para objetos
 const personajes = {
@@ -59,4 +66,42 @@ test('¿Existe el persona Bart en el objeto?', () => {
     expect(personajes.cuatro).toContain('Bart')
 });
 
-// Pruebas para promesas
+
+// Pruebas para promesas .then
+const reverseString2 = text => {
+    return new Promise((resolve, reject) => {
+        if (!text) {
+            // Promesa rechazada
+            reject(Error('Error'))
+        }
+
+        // Promesa resuelta
+        resolve(text.split('').reverse().join(''));
+    })
+}
+
+test('Probar una promesa ', () => {
+    return reverseString2('Hola')
+        .then(text => {
+            // Validando que invertimos sea aloH
+            expect(text).toBe('aloH');
+        });
+});
+
+
+// Pruebas para promesas await
+test('Probar async/await ', async() => {
+    const string = await reverseString2('Hola');
+    // Validando que invertimos sea aloH
+    expect(string).toBe('aloH');
+});
+
+
+// Funciones que se ejecutan despues de nuestras pruebas
+afterEach(() => console.log('Despues de cada prueba'));
+afterAll(() => console.log('Despues de todas las pruebas'));
+
+
+// Funciones que se ejecutan antes de nuestras pruebas
+beforeEach(() => console.log('Antes de cada prueba'));
+beforeAll(() => console.log('Antes de todas las pruebas'));
