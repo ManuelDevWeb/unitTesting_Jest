@@ -1,0 +1,11 @@
+1. Instalar jest: npm install jest --save-dev
+
+2. Crear la carpeta: src
+
+3. Crear el archivo: src/index.js
+
+4. Crear la carpeta: src/__test__
+
+5. Crear el archivo: src/__test__/global.test.js
+
+6. Agregar el comando test en el package.json (npm run test) para ejecutar pruebas
