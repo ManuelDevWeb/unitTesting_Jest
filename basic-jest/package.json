@@ -4,7 +4,8 @@
     "description": "Pruebas unitarias con jest",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "author": "Manuel Valencia <manueldeveloper17@gmail.com>",
     "license": "MIT",

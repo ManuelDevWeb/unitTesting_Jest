@@ -8,6 +8,13 @@
 
 5. Crear el archivo: src/__test__/global.test.js
 
-6. Agregar el comando test en el package.json (npm run test) para ejecutar pruebas
+6. Agregar el script test en el package.json (npm run test) para ejecutar pruebas
 
 7. Implementar watch y coverage en el index.js
+
+8. Crear el archivo: src/__test__/index.test.js
+
+9. Agregar el script test:watch en el package.json para automatizar el proceso de pruebas (npm run test:watch)
+
+10. Para generar coverage: npx jest --coverage, ir al index.html de la carpeta generada coverage, asi poder
+    tener una mejor visualización

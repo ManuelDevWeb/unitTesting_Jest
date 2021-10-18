@@ -97,11 +97,11 @@ test('Probar async/await ', async() => {
 });
 
 
-// Funciones que se ejecutan despues de nuestras pruebas
-afterEach(() => console.log('Despues de cada prueba'));
-afterAll(() => console.log('Despues de todas las pruebas'));
+// // Funciones que se ejecutan despues de nuestras pruebas
+// afterEach(() => console.log('Despues de cada prueba'));
+// afterAll(() => console.log('Despues de todas las pruebas'));
 
 
-// Funciones que se ejecutan antes de nuestras pruebas
-beforeEach(() => console.log('Antes de cada prueba'));
-beforeAll(() => console.log('Antes de todas las pruebas'));
+// // Funciones que se ejecutan antes de nuestras pruebas
+// beforeEach(() => console.log('Antes de cada prueba'));
+// beforeAll(() => console.log('Antes de todas las pruebas'));
