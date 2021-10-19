@@ -1,0 +1,21 @@
+** Tests a nuestro proyecto **
+
+1. Instalar herramientas para hacer los test: npm install enzyme enzyme-adapter-react-16 --save-dev 
+
+2. Agregar los scripts test y test:watch en el package.json
+
+3. Crear la carpeta: src/__test__
+
+4. Crear el archivo: src/__test__/setupTest.js
+
+5. Agregar el valor jest/setupFilesAfterEnv en el package.json
+
+6. Crear la carpeta: src/__test__/components
+
+7. Crear el archivo: src/__test__/components/Footer.test.js
+
+8. Crear la carpeta: src/__mocks__
+
+9. Crear el archivo: src/__mocks__/styleMock.js
+
+10. Agregar el valor jest/moduleNameMapper en el package.json
