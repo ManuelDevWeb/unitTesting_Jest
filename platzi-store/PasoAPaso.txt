@@ -19,3 +19,7 @@
 9. Crear el archivo: src/__mocks__/styleMock.js
 
 10. Agregar el valor jest/moduleNameMapper en el package.json
+
+11. Crear el archivo: src/__mocks__/ProviderMock.js
+
+12. Crear el archivo: src/__test__/components/Header.test.js

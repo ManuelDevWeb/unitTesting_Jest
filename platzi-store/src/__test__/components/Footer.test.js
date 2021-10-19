@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 // Importando componente
 import Footer from '../../components/Footer';
 
-// Describir una serie de pruebas (dentro de un bloque) que utilizaremos en este proyecto
+// Describir una serie de pruebas (dentro de un bloque) que utilizaremos en este componente
 describe('<Footer />', () => {
   const footer = mount(<Footer />);
 
