@@ -32,3 +32,6 @@
 
 16. Agregar el script test:update (Actualizar snapshots) en el package.json
 
+17. Crear la carpeta: src/__test__/actions
+
+18. Crear el archivo: src/__test__/actions/actions.test.js
