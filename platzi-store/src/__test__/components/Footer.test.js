@@ -20,6 +20,7 @@ describe('<Footer />', () => {
 });
 
 describe('Footer Snapshot', () => {
+  // Validando que la UI del Footer no ha cambiado
   test('Comprobar la UI del componente Footer', () => {
     // Footer no esta conectado con Redux, por eso se pasa asi
     const footer = create(<Footer />);

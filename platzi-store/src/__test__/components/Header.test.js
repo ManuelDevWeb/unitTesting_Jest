@@ -3,6 +3,7 @@ import React from 'react';
    shallow --> Solo necesitas algo particular del componente. No ocupas todo el DOM
 */
 import { mount, shallow } from 'enzyme';
+import { create } from 'react-test-renderer';
 import ProviderMock from '../../__mocks__/ProviderMock';
 
 // Importando componente
@@ -29,4 +30,17 @@ describe('<Header />', () => {
     );
     expect(header.find('.Header-title').text()).toEqual('Platzi Store');
   });
+});
+
+describe('Header ShapShot', () => {
+  // Validando que la UI del Header no ha cambiado
+  test('Comprobar el SnapShot de Header ', () => {
+    const header = create(
+      <ProviderMock>
+        <Header />
+      </ProviderMock>,
+    );
+    expect(header.toJSON()).toMatchSnapshot();
+  });
+
 });

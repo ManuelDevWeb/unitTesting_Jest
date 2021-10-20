@@ -4,3 +4,7 @@ Snapshot -> Permiten probar la UI y establecer una reglas cuando tenemos compone
             simplemente representa una estructura visual
 Mount ->
 Shallow -> 
+
+Probar test de manera individual:
+-> npm run test src/__test__/index.test.js
+ -> npx jest src/__test__/index.test.js

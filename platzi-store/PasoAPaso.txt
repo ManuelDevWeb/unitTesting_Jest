@@ -2,7 +2,7 @@
 
 1. Instalar herramientas para hacer los test: npm install enzyme enzyme-adapter-react-16 --save-dev 
 
-2. Agregar los scripts test y test:watch en el package.json
+2. Agregar los scripts test (Probar tests o uno en especifico) y test:watch (Probar tests en tiempo real) en el package.json
 
 3. Crear la carpeta: src/__test__
 
@@ -29,5 +29,6 @@
 14. Crear el archivo: src/__test__/components/Product.test.js
 
 15. Instalar react test renderer: npm i react-test-renderer@16.14.0 -D
-16. 
+
+16. Agregar el script test:update (Actualizar snapshots) en el package.json
 
