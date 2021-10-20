@@ -14,7 +14,7 @@ describe('Actions', () => {
   });
 
   // Validando el action removeFromCart
-  test('removeFromCart', () => {
+  test('removeFromCart Action', () => {
     const expected = {
       type: 'REMOVE_FROM_CART',
       payload,

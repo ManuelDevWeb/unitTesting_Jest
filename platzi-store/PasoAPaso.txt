@@ -35,3 +35,7 @@
 17. Crear la carpeta: src/__test__/actions
 
 18. Crear el archivo: src/__test__/actions/actions.test.js
+
+19. Crear la carpeta: src/__test__/reducers
+
+20. Crear el archivo: src/__test__/reducers/reducers.test.js
