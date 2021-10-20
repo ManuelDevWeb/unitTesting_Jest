@@ -1,9 +1,9 @@
-Mocks ->
+Mocks -> Los mocks son funciones que simulan acciones que deberia hacer nuestra app.
 Snapshot -> Permiten probar la UI y establecer una reglas cuando tenemos componentes que no
             cambian gradualmente, por ejemplo el componente Footer que no tiene lógica y que
             simplemente representa una estructura visual
-Mount ->
-Shallow -> 
+Mount -> Cuando necesitas el DOM
+Shallow -> Solo necesitas algo particular del componente. No ocupas todo el DOM
 
 Probar test de manera individual:
 -> npm run test src/__test__/index.test.js

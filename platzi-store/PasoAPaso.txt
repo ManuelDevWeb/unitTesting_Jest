@@ -39,3 +39,26 @@
 19. Crear la carpeta: src/__test__/reducers
 
 20. Crear el archivo: src/__test__/reducers/reducers.test.js
+
+21. Crear la carpeta: src/utils
+
+22. Crear el archivo: src/utils/getData.js
+
+23. Crear la carpeta: src/__test__/utils
+
+24. Crear el archivo: src/__test__/utils/getData.test.js
+
+25. Instalar jest fetch mock: npm install jest-fetch-mock -D
+
+26. Crear el archivo: src/__mocks__/
+
+27. Implementar Travis CI, permite comprobar que las pruebas se esten cumpliendo y una vez
+    se cumplan, enviar a producción. Implementar los siguientes pasos: 
+
+    - Logearnos con GitHub
+    - Crear el archivo: .travis.yml
+    - Ir a settings y sincronizar travis con GitHub
+    - Seleccionar el repo unitTesting_Jest y ir a settings
+    - Ir a settings en GitHub/DeveloperSettings/Personal Access Token
+    - Note: Travis-ci-jest, seleccionar repo y a read:repo_hook
+    - Llevar el token: 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 a travis-ci
