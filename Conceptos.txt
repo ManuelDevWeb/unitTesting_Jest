@@ -1,0 +1,6 @@
+Mocks ->
+Snapshot -> Permiten probar la UI y establecer una reglas cuando tenemos componentes que no
+            cambian gradualmente, por ejemplo el componente Footer que no tiene lógica y que
+            simplemente representa una estructura visual
+Mount ->
+Shallow -> 

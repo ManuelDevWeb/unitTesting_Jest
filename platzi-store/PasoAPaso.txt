@@ -28,3 +28,6 @@
 
 14. Crear el archivo: src/__test__/components/Product.test.js
 
+15. Instalar react test renderer: npm i react-test-renderer@16.14.0 -D
+16. 
+

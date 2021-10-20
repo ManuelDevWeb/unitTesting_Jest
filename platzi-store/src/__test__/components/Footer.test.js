@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-
+import { create } from 'react-test-renderer';
 // Importando componente
 import Footer from '../../components/Footer';
 
@@ -16,5 +16,14 @@ describe('<Footer />', () => {
   // Validando que el elemento con clase Footer-title tiene un texto igual a Platzi Store
   test('Render del título ', () => {
     expect(footer.find('.Footer-title').text()).toEqual('Platzi Store');
+  });
+});
+
+describe('Footer Snapshot', () => {
+  test('Comprobar la UI del componente Footer', () => {
+    // Footer no esta conectado con Redux, por eso se pasa asi
+    const footer = create(<Footer />);
+    // Convertimos el componente a un JSON, si no existe el snapshot lo crea y lo comprueba
+    expect(footer.toJSON()).toMatchSnapshot();
   });
 });

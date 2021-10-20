@@ -23,6 +23,7 @@ describe('<Product />', () => {
 
   // Simulando funcionamiento del click en el boton comprar
   test('Comprobar el boton de comprar', () => {
+    // Llamar función (No llamamos la real)
     const handleAddToCart = jest.fn();
     const wrapper = mount(
       <ProviderMock>
